@@ -1,0 +1,4632 @@
+[
+  {
+    "type": "args_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "argument",
+          "named": true
+        },
+        {
+          "type": "second_argument",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "argument",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "literal",
+          "named": true
+        },
+        {
+          "type": "register",
+          "named": true
+        },
+        {
+          "type": "type_coerced_identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "argument_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "args_list",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "bool_literal",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "boolean_comparison",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "argument",
+          "named": true
+        },
+        {
+          "type": "comparison",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "boolean_comparison_negated",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "boolean_expression",
+          "named": true
+        },
+        {
+          "type": "second_boolean_expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "boolean_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "boolean_comparison",
+          "named": true
+        },
+        {
+          "type": "boolean_comparison_negated",
+          "named": true
+        },
+        {
+          "type": "boolean_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "boolean_value",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "argument",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "break",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "breakif",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "boolean_expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "catch",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "argument_list",
+          "named": true
+        },
+        {
+          "type": "break",
+          "named": true
+        },
+        {
+          "type": "breakif",
+          "named": true
+        },
+        {
+          "type": "catch",
+          "named": true
+        },
+        {
+          "type": "continue",
+          "named": true
+        },
+        {
+          "type": "exception_id",
+          "named": true
+        },
+        {
+          "type": "for_loop",
+          "named": true
+        },
+        {
+          "type": "forever_loop",
+          "named": true
+        },
+        {
+          "type": "function_call",
+          "named": true
+        },
+        {
+          "type": "function_call_paren",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "instruction",
+          "named": true
+        },
+        {
+          "type": "jump_label",
+          "named": true
+        },
+        {
+          "type": "jump_statement",
+          "named": true
+        },
+        {
+          "type": "repeat_loop",
+          "named": true
+        },
+        {
+          "type": "switch_statement",
+          "named": true
+        },
+        {
+          "type": "while_loop",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "comparison",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "const_decl",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "data_type",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "variable_init",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "const_section",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "const_decl",
+          "named": true
+        },
+        {
+          "type": "second_const_decl",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "continue",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "data_type",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "dot",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "else_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "argument_list",
+          "named": true
+        },
+        {
+          "type": "break",
+          "named": true
+        },
+        {
+          "type": "breakif",
+          "named": true
+        },
+        {
+          "type": "catch",
+          "named": true
+        },
+        {
+          "type": "continue",
+          "named": true
+        },
+        {
+          "type": "for_loop",
+          "named": true
+        },
+        {
+          "type": "forever_loop",
+          "named": true
+        },
+        {
+          "type": "function_call",
+          "named": true
+        },
+        {
+          "type": "function_call_paren",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "instruction",
+          "named": true
+        },
+        {
+          "type": "jump_label",
+          "named": true
+        },
+        {
+          "type": "jump_statement",
+          "named": true
+        },
+        {
+          "type": "repeat_loop",
+          "named": true
+        },
+        {
+          "type": "switch_statement",
+          "named": true
+        },
+        {
+          "type": "while_loop",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "elseif_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "argument_list",
+          "named": true
+        },
+        {
+          "type": "boolean_expression",
+          "named": true
+        },
+        {
+          "type": "break",
+          "named": true
+        },
+        {
+          "type": "breakif",
+          "named": true
+        },
+        {
+          "type": "catch",
+          "named": true
+        },
+        {
+          "type": "continue",
+          "named": true
+        },
+        {
+          "type": "for_loop",
+          "named": true
+        },
+        {
+          "type": "forever_loop",
+          "named": true
+        },
+        {
+          "type": "function_call",
+          "named": true
+        },
+        {
+          "type": "function_call_paren",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "instruction",
+          "named": true
+        },
+        {
+          "type": "jump_label",
+          "named": true
+        },
+        {
+          "type": "jump_statement",
+          "named": true
+        },
+        {
+          "type": "repeat_loop",
+          "named": true
+        },
+        {
+          "type": "second_boolean_expression",
+          "named": true
+        },
+        {
+          "type": "switch_statement",
+          "named": true
+        },
+        {
+          "type": "while_loop",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "exception_id",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "dot",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "for_loop",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "argument_list",
+          "named": true
+        },
+        {
+          "type": "boolean_expression",
+          "named": true
+        },
+        {
+          "type": "break",
+          "named": true
+        },
+        {
+          "type": "breakif",
+          "named": true
+        },
+        {
+          "type": "catch",
+          "named": true
+        },
+        {
+          "type": "continue",
+          "named": true
+        },
+        {
+          "type": "for_loop",
+          "named": true
+        },
+        {
+          "type": "forever_loop",
+          "named": true
+        },
+        {
+          "type": "function_call",
+          "named": true
+        },
+        {
+          "type": "function_call_paren",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "instruction",
+          "named": true
+        },
+        {
+          "type": "jump_label",
+          "named": true
+        },
+        {
+          "type": "jump_statement",
+          "named": true
+        },
+        {
+          "type": "repeat_loop",
+          "named": true
+        },
+        {
+          "type": "switch_statement",
+          "named": true
+        },
+        {
+          "type": "while_loop",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "forever_loop",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "argument_list",
+          "named": true
+        },
+        {
+          "type": "break",
+          "named": true
+        },
+        {
+          "type": "breakif",
+          "named": true
+        },
+        {
+          "type": "catch",
+          "named": true
+        },
+        {
+          "type": "continue",
+          "named": true
+        },
+        {
+          "type": "for_loop",
+          "named": true
+        },
+        {
+          "type": "forever_loop",
+          "named": true
+        },
+        {
+          "type": "function_call",
+          "named": true
+        },
+        {
+          "type": "function_call_paren",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "instruction",
+          "named": true
+        },
+        {
+          "type": "jump_label",
+          "named": true
+        },
+        {
+          "type": "jump_statement",
+          "named": true
+        },
+        {
+          "type": "repeat_loop",
+          "named": true
+        },
+        {
+          "type": "switch_statement",
+          "named": true
+        },
+        {
+          "type": "while_loop",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "function_call",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "function_call_paren",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "argument_list",
+          "named": true
+        },
+        {
+          "type": "dot",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "if_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "argument_list",
+          "named": true
+        },
+        {
+          "type": "boolean_expression",
+          "named": true
+        },
+        {
+          "type": "break",
+          "named": true
+        },
+        {
+          "type": "breakif",
+          "named": true
+        },
+        {
+          "type": "catch",
+          "named": true
+        },
+        {
+          "type": "continue",
+          "named": true
+        },
+        {
+          "type": "else_statement",
+          "named": true
+        },
+        {
+          "type": "elseif_statement",
+          "named": true
+        },
+        {
+          "type": "for_loop",
+          "named": true
+        },
+        {
+          "type": "forever_loop",
+          "named": true
+        },
+        {
+          "type": "function_call",
+          "named": true
+        },
+        {
+          "type": "function_call_paren",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "instruction",
+          "named": true
+        },
+        {
+          "type": "jump_label",
+          "named": true
+        },
+        {
+          "type": "jump_statement",
+          "named": true
+        },
+        {
+          "type": "repeat_loop",
+          "named": true
+        },
+        {
+          "type": "second_boolean_expression",
+          "named": true
+        },
+        {
+          "type": "switch_statement",
+          "named": true
+        },
+        {
+          "type": "while_loop",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "include",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "instruction",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "jump_label",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "jump_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "jump_type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "jump_type",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "literal",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "char_literal",
+          "named": true
+        },
+        {
+          "type": "float_literal",
+          "named": true
+        },
+        {
+          "type": "int_literal",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "parameter",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "data_type",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "parameter_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "parameter",
+          "named": true
+        },
+        {
+          "type": "second_parameter",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "procedure_forward",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "parameter_list",
+          "named": true
+        },
+        {
+          "type": "procedure_returns",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "procedure_impl",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "argument_list",
+          "named": true
+        },
+        {
+          "type": "break",
+          "named": true
+        },
+        {
+          "type": "breakif",
+          "named": true
+        },
+        {
+          "type": "catch",
+          "named": true
+        },
+        {
+          "type": "const_section",
+          "named": true
+        },
+        {
+          "type": "continue",
+          "named": true
+        },
+        {
+          "type": "for_loop",
+          "named": true
+        },
+        {
+          "type": "forever_loop",
+          "named": true
+        },
+        {
+          "type": "function_call",
+          "named": true
+        },
+        {
+          "type": "function_call_paren",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "instruction",
+          "named": true
+        },
+        {
+          "type": "jump_label",
+          "named": true
+        },
+        {
+          "type": "jump_statement",
+          "named": true
+        },
+        {
+          "type": "parameter_list",
+          "named": true
+        },
+        {
+          "type": "procedure_returns",
+          "named": true
+        },
+        {
+          "type": "repeat_loop",
+          "named": true
+        },
+        {
+          "type": "static_section",
+          "named": true
+        },
+        {
+          "type": "switch_statement",
+          "named": true
+        },
+        {
+          "type": "val_section",
+          "named": true
+        },
+        {
+          "type": "var_section",
+          "named": true
+        },
+        {
+          "type": "while_loop",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "procedure_returns",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "string_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "program_definition",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "argument_list",
+          "named": true
+        },
+        {
+          "type": "break",
+          "named": true
+        },
+        {
+          "type": "breakif",
+          "named": true
+        },
+        {
+          "type": "catch",
+          "named": true
+        },
+        {
+          "type": "const_section",
+          "named": true
+        },
+        {
+          "type": "continue",
+          "named": true
+        },
+        {
+          "type": "for_loop",
+          "named": true
+        },
+        {
+          "type": "forever_loop",
+          "named": true
+        },
+        {
+          "type": "function_call",
+          "named": true
+        },
+        {
+          "type": "function_call_paren",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "include",
+          "named": true
+        },
+        {
+          "type": "instruction",
+          "named": true
+        },
+        {
+          "type": "jump_label",
+          "named": true
+        },
+        {
+          "type": "jump_statement",
+          "named": true
+        },
+        {
+          "type": "procedure_forward",
+          "named": true
+        },
+        {
+          "type": "procedure_impl",
+          "named": true
+        },
+        {
+          "type": "repeat_loop",
+          "named": true
+        },
+        {
+          "type": "static_section",
+          "named": true
+        },
+        {
+          "type": "switch_statement",
+          "named": true
+        },
+        {
+          "type": "val_section",
+          "named": true
+        },
+        {
+          "type": "while_loop",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "register",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "repeat_loop",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "argument_list",
+          "named": true
+        },
+        {
+          "type": "boolean_expression",
+          "named": true
+        },
+        {
+          "type": "break",
+          "named": true
+        },
+        {
+          "type": "breakif",
+          "named": true
+        },
+        {
+          "type": "catch",
+          "named": true
+        },
+        {
+          "type": "continue",
+          "named": true
+        },
+        {
+          "type": "for_loop",
+          "named": true
+        },
+        {
+          "type": "forever_loop",
+          "named": true
+        },
+        {
+          "type": "function_call",
+          "named": true
+        },
+        {
+          "type": "function_call_paren",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "instruction",
+          "named": true
+        },
+        {
+          "type": "jump_label",
+          "named": true
+        },
+        {
+          "type": "jump_statement",
+          "named": true
+        },
+        {
+          "type": "repeat_loop",
+          "named": true
+        },
+        {
+          "type": "switch_statement",
+          "named": true
+        },
+        {
+          "type": "while_loop",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "second_argument",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "argument",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "second_boolean_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "boolean_expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "second_const_decl",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "const_decl",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "second_parameter",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "parameter",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "second_val_decl",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "val_decl",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "second_var_decl",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "var_decl",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "program_definition",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "static_section",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "variable_declaration",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "switch_case",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "argument_list",
+          "named": true
+        },
+        {
+          "type": "break",
+          "named": true
+        },
+        {
+          "type": "breakif",
+          "named": true
+        },
+        {
+          "type": "catch",
+          "named": true
+        },
+        {
+          "type": "continue",
+          "named": true
+        },
+        {
+          "type": "for_loop",
+          "named": true
+        },
+        {
+          "type": "forever_loop",
+          "named": true
+        },
+        {
+          "type": "function_call",
+          "named": true
+        },
+        {
+          "type": "function_call_paren",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "instruction",
+          "named": true
+        },
+        {
+          "type": "jump_label",
+          "named": true
+        },
+        {
+          "type": "jump_statement",
+          "named": true
+        },
+        {
+          "type": "literal",
+          "named": true
+        },
+        {
+          "type": "repeat_loop",
+          "named": true
+        },
+        {
+          "type": "switch_statement",
+          "named": true
+        },
+        {
+          "type": "while_loop",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "switch_default",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "argument_list",
+          "named": true
+        },
+        {
+          "type": "break",
+          "named": true
+        },
+        {
+          "type": "breakif",
+          "named": true
+        },
+        {
+          "type": "catch",
+          "named": true
+        },
+        {
+          "type": "continue",
+          "named": true
+        },
+        {
+          "type": "for_loop",
+          "named": true
+        },
+        {
+          "type": "forever_loop",
+          "named": true
+        },
+        {
+          "type": "function_call",
+          "named": true
+        },
+        {
+          "type": "function_call_paren",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "instruction",
+          "named": true
+        },
+        {
+          "type": "jump_label",
+          "named": true
+        },
+        {
+          "type": "jump_statement",
+          "named": true
+        },
+        {
+          "type": "repeat_loop",
+          "named": true
+        },
+        {
+          "type": "switch_statement",
+          "named": true
+        },
+        {
+          "type": "while_loop",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "switch_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "register",
+          "named": true
+        },
+        {
+          "type": "switch_case",
+          "named": true
+        },
+        {
+          "type": "switch_default",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "type_coerced_identifier",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "data_type",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "val_decl",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "variable_init",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "val_section",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "second_val_decl",
+          "named": true
+        },
+        {
+          "type": "val_decl",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "var_decl",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "data_type",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "var_section",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "second_var_decl",
+          "named": true
+        },
+        {
+          "type": "var_decl",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "variable_declaration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "data_type",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "variable_init",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "variable_init",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "while_loop",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "argument_list",
+          "named": true
+        },
+        {
+          "type": "boolean_expression",
+          "named": true
+        },
+        {
+          "type": "break",
+          "named": true
+        },
+        {
+          "type": "breakif",
+          "named": true
+        },
+        {
+          "type": "catch",
+          "named": true
+        },
+        {
+          "type": "continue",
+          "named": true
+        },
+        {
+          "type": "for_loop",
+          "named": true
+        },
+        {
+          "type": "forever_loop",
+          "named": true
+        },
+        {
+          "type": "function_call",
+          "named": true
+        },
+        {
+          "type": "function_call_paren",
+          "named": true
+        },
+        {
+          "type": "if_statement",
+          "named": true
+        },
+        {
+          "type": "instruction",
+          "named": true
+        },
+        {
+          "type": "jump_label",
+          "named": true
+        },
+        {
+          "type": "jump_statement",
+          "named": true
+        },
+        {
+          "type": "repeat_loop",
+          "named": true
+        },
+        {
+          "type": "switch_statement",
+          "named": true
+        },
+        {
+          "type": "while_loop",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "!",
+    "named": false
+  },
+  {
+    "type": "!=",
+    "named": false
+  },
+  {
+    "type": "\"",
+    "named": false
+  },
+  {
+    "type": "#include",
+    "named": false
+  },
+  {
+    "type": "#includeonce",
+    "named": false
+  },
+  {
+    "type": "&&",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": ".hhf",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": ":=",
+    "named": false
+  },
+  {
+    "type": ";",
+    "named": false
+  },
+  {
+    "type": "<",
+    "named": false
+  },
+  {
+    "type": "<=",
+    "named": false
+  },
+  {
+    "type": "<>",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": "==",
+    "named": false
+  },
+  {
+    "type": ">",
+    "named": false
+  },
+  {
+    "type": ">=",
+    "named": false
+  },
+  {
+    "type": "@returns",
+    "named": false
+  },
+  {
+    "type": "aaa",
+    "named": false
+  },
+  {
+    "type": "aad",
+    "named": false
+  },
+  {
+    "type": "aam",
+    "named": false
+  },
+  {
+    "type": "aas",
+    "named": false
+  },
+  {
+    "type": "adc",
+    "named": false
+  },
+  {
+    "type": "add",
+    "named": false
+  },
+  {
+    "type": "addpd",
+    "named": false
+  },
+  {
+    "type": "addps",
+    "named": false
+  },
+  {
+    "type": "addsd",
+    "named": false
+  },
+  {
+    "type": "addss",
+    "named": false
+  },
+  {
+    "type": "addsubpd",
+    "named": false
+  },
+  {
+    "type": "addsubps",
+    "named": false
+  },
+  {
+    "type": "ah",
+    "named": false
+  },
+  {
+    "type": "al",
+    "named": false
+  },
+  {
+    "type": "and",
+    "named": false
+  },
+  {
+    "type": "andnpd",
+    "named": false
+  },
+  {
+    "type": "andnps",
+    "named": false
+  },
+  {
+    "type": "andpd",
+    "named": false
+  },
+  {
+    "type": "andps",
+    "named": false
+  },
+  {
+    "type": "arpl",
+    "named": false
+  },
+  {
+    "type": "ax",
+    "named": false
+  },
+  {
+    "type": "begin",
+    "named": false
+  },
+  {
+    "type": "bh",
+    "named": false
+  },
+  {
+    "type": "bl",
+    "named": false
+  },
+  {
+    "type": "bp",
+    "named": false
+  },
+  {
+    "type": "break",
+    "named": false
+  },
+  {
+    "type": "breakif",
+    "named": false
+  },
+  {
+    "type": "bsf",
+    "named": false
+  },
+  {
+    "type": "bsr",
+    "named": false
+  },
+  {
+    "type": "bswap",
+    "named": false
+  },
+  {
+    "type": "bt",
+    "named": false
+  },
+  {
+    "type": "btc",
+    "named": false
+  },
+  {
+    "type": "btr",
+    "named": false
+  },
+  {
+    "type": "bts",
+    "named": false
+  },
+  {
+    "type": "bx",
+    "named": false
+  },
+  {
+    "type": "call",
+    "named": false
+  },
+  {
+    "type": "case",
+    "named": false
+  },
+  {
+    "type": "cbw",
+    "named": false
+  },
+  {
+    "type": "cdq",
+    "named": false
+  },
+  {
+    "type": "ch",
+    "named": false
+  },
+  {
+    "type": "char_literal",
+    "named": true
+  },
+  {
+    "type": "cl",
+    "named": false
+  },
+  {
+    "type": "clc",
+    "named": false
+  },
+  {
+    "type": "cld",
+    "named": false
+  },
+  {
+    "type": "clflush",
+    "named": false
+  },
+  {
+    "type": "cli",
+    "named": false
+  },
+  {
+    "type": "clts",
+    "named": false
+  },
+  {
+    "type": "cmc",
+    "named": false
+  },
+  {
+    "type": "cmova",
+    "named": false
+  },
+  {
+    "type": "cmovae",
+    "named": false
+  },
+  {
+    "type": "cmovb",
+    "named": false
+  },
+  {
+    "type": "cmovbe",
+    "named": false
+  },
+  {
+    "type": "cmovc",
+    "named": false
+  },
+  {
+    "type": "cmove",
+    "named": false
+  },
+  {
+    "type": "cmovg",
+    "named": false
+  },
+  {
+    "type": "cmovge",
+    "named": false
+  },
+  {
+    "type": "cmovl",
+    "named": false
+  },
+  {
+    "type": "cmovle",
+    "named": false
+  },
+  {
+    "type": "cmovna",
+    "named": false
+  },
+  {
+    "type": "cmovnae",
+    "named": false
+  },
+  {
+    "type": "cmovnb",
+    "named": false
+  },
+  {
+    "type": "cmovnbe",
+    "named": false
+  },
+  {
+    "type": "cmovnc",
+    "named": false
+  },
+  {
+    "type": "cmovne",
+    "named": false
+  },
+  {
+    "type": "cmovng",
+    "named": false
+  },
+  {
+    "type": "cmovnge",
+    "named": false
+  },
+  {
+    "type": "cmovnl",
+    "named": false
+  },
+  {
+    "type": "cmovnle",
+    "named": false
+  },
+  {
+    "type": "cmovno",
+    "named": false
+  },
+  {
+    "type": "cmovnp",
+    "named": false
+  },
+  {
+    "type": "cmovns",
+    "named": false
+  },
+  {
+    "type": "cmovnz",
+    "named": false
+  },
+  {
+    "type": "cmovo",
+    "named": false
+  },
+  {
+    "type": "cmovp",
+    "named": false
+  },
+  {
+    "type": "cmovpe",
+    "named": false
+  },
+  {
+    "type": "cmovs",
+    "named": false
+  },
+  {
+    "type": "cmovz",
+    "named": false
+  },
+  {
+    "type": "cmp",
+    "named": false
+  },
+  {
+    "type": "cmpeqpd",
+    "named": false
+  },
+  {
+    "type": "cmpeqps",
+    "named": false
+  },
+  {
+    "type": "cmpeqsd",
+    "named": false
+  },
+  {
+    "type": "cmpeqss",
+    "named": false
+  },
+  {
+    "type": "cmplepd",
+    "named": false
+  },
+  {
+    "type": "cmpleps",
+    "named": false
+  },
+  {
+    "type": "cmplesd",
+    "named": false
+  },
+  {
+    "type": "cmpless",
+    "named": false
+  },
+  {
+    "type": "cmpltpd",
+    "named": false
+  },
+  {
+    "type": "cmpltps",
+    "named": false
+  },
+  {
+    "type": "cmpltsd",
+    "named": false
+  },
+  {
+    "type": "cmpltss",
+    "named": false
+  },
+  {
+    "type": "cmpneqpd",
+    "named": false
+  },
+  {
+    "type": "cmpneqps",
+    "named": false
+  },
+  {
+    "type": "cmpneqsd",
+    "named": false
+  },
+  {
+    "type": "cmpneqss",
+    "named": false
+  },
+  {
+    "type": "cmpnlepd",
+    "named": false
+  },
+  {
+    "type": "cmpnleps",
+    "named": false
+  },
+  {
+    "type": "cmpnlesd",
+    "named": false
+  },
+  {
+    "type": "cmpnless",
+    "named": false
+  },
+  {
+    "type": "cmpnltpd",
+    "named": false
+  },
+  {
+    "type": "cmpnltps",
+    "named": false
+  },
+  {
+    "type": "cmpnltsd",
+    "named": false
+  },
+  {
+    "type": "cmpnltss",
+    "named": false
+  },
+  {
+    "type": "cmpordpd",
+    "named": false
+  },
+  {
+    "type": "cmpordps",
+    "named": false
+  },
+  {
+    "type": "cmpordsd",
+    "named": false
+  },
+  {
+    "type": "cmpordss",
+    "named": false
+  },
+  {
+    "type": "cmppd",
+    "named": false
+  },
+  {
+    "type": "cmpps",
+    "named": false
+  },
+  {
+    "type": "cmpsb",
+    "named": false
+  },
+  {
+    "type": "cmpsd",
+    "named": false
+  },
+  {
+    "type": "cmpss",
+    "named": false
+  },
+  {
+    "type": "cmpsw",
+    "named": false
+  },
+  {
+    "type": "cmpunordpd",
+    "named": false
+  },
+  {
+    "type": "cmpunordps",
+    "named": false
+  },
+  {
+    "type": "cmpunordsd",
+    "named": false
+  },
+  {
+    "type": "cmpunordss",
+    "named": false
+  },
+  {
+    "type": "cmpxchg",
+    "named": false
+  },
+  {
+    "type": "cmpxchg8b",
+    "named": false
+  },
+  {
+    "type": "comisd",
+    "named": false
+  },
+  {
+    "type": "comiss",
+    "named": false
+  },
+  {
+    "type": "const",
+    "named": false
+  },
+  {
+    "type": "continue",
+    "named": false
+  },
+  {
+    "type": "cpuid",
+    "named": false
+  },
+  {
+    "type": "cset",
+    "named": false
+  },
+  {
+    "type": "cvtdq2pd",
+    "named": false
+  },
+  {
+    "type": "cvtdq2ps",
+    "named": false
+  },
+  {
+    "type": "cvtpd2dq",
+    "named": false
+  },
+  {
+    "type": "cvtpd2pi",
+    "named": false
+  },
+  {
+    "type": "cvtpd2ps",
+    "named": false
+  },
+  {
+    "type": "cvtpi2pd",
+    "named": false
+  },
+  {
+    "type": "cvtpi2ps",
+    "named": false
+  },
+  {
+    "type": "cvtps2dq",
+    "named": false
+  },
+  {
+    "type": "cvtps2pd",
+    "named": false
+  },
+  {
+    "type": "cvtps2pi",
+    "named": false
+  },
+  {
+    "type": "cvtsd2si",
+    "named": false
+  },
+  {
+    "type": "cvtsd2ss",
+    "named": false
+  },
+  {
+    "type": "cvtsi2sd",
+    "named": false
+  },
+  {
+    "type": "cvtsi2ss",
+    "named": false
+  },
+  {
+    "type": "cvtss2sd",
+    "named": false
+  },
+  {
+    "type": "cvtss2si",
+    "named": false
+  },
+  {
+    "type": "cvttpd2dq",
+    "named": false
+  },
+  {
+    "type": "cvttpd2pi",
+    "named": false
+  },
+  {
+    "type": "cvttps2dq",
+    "named": false
+  },
+  {
+    "type": "cvttps2pi",
+    "named": false
+  },
+  {
+    "type": "cvttsd2si",
+    "named": false
+  },
+  {
+    "type": "cvttss2si",
+    "named": false
+  },
+  {
+    "type": "cwd",
+    "named": false
+  },
+  {
+    "type": "cwde",
+    "named": false
+  },
+  {
+    "type": "cx",
+    "named": false
+  },
+  {
+    "type": "daa",
+    "named": false
+  },
+  {
+    "type": "das",
+    "named": false
+  },
+  {
+    "type": "dec",
+    "named": false
+  },
+  {
+    "type": "default",
+    "named": false
+  },
+  {
+    "type": "dh",
+    "named": false
+  },
+  {
+    "type": "div",
+    "named": false
+  },
+  {
+    "type": "divpd",
+    "named": false
+  },
+  {
+    "type": "divps",
+    "named": false
+  },
+  {
+    "type": "divsd",
+    "named": false
+  },
+  {
+    "type": "divss",
+    "named": false
+  },
+  {
+    "type": "dl",
+    "named": false
+  },
+  {
+    "type": "do",
+    "named": false
+  },
+  {
+    "type": "dword",
+    "named": false
+  },
+  {
+    "type": "dx",
+    "named": false
+  },
+  {
+    "type": "eax",
+    "named": false
+  },
+  {
+    "type": "ebx",
+    "named": false
+  },
+  {
+    "type": "ecx",
+    "named": false
+  },
+  {
+    "type": "edx",
+    "named": false
+  },
+  {
+    "type": "else",
+    "named": false
+  },
+  {
+    "type": "elseif",
+    "named": false
+  },
+  {
+    "type": "emms",
+    "named": false
+  },
+  {
+    "type": "end",
+    "named": false
+  },
+  {
+    "type": "endfor",
+    "named": false
+  },
+  {
+    "type": "endif",
+    "named": false
+  },
+  {
+    "type": "endswitch",
+    "named": false
+  },
+  {
+    "type": "endtry",
+    "named": false
+  },
+  {
+    "type": "endwhile",
+    "named": false
+  },
+  {
+    "type": "enter",
+    "named": false
+  },
+  {
+    "type": "enum",
+    "named": false
+  },
+  {
+    "type": "f2xm1",
+    "named": false
+  },
+  {
+    "type": "fabs",
+    "named": false
+  },
+  {
+    "type": "fadd",
+    "named": false
+  },
+  {
+    "type": "faddp",
+    "named": false
+  },
+  {
+    "type": "false",
+    "named": false
+  },
+  {
+    "type": "fbld",
+    "named": false
+  },
+  {
+    "type": "fbstp",
+    "named": false
+  },
+  {
+    "type": "fchs",
+    "named": false
+  },
+  {
+    "type": "fclex",
+    "named": false
+  },
+  {
+    "type": "fcmova",
+    "named": false
+  },
+  {
+    "type": "fcmovae",
+    "named": false
+  },
+  {
+    "type": "fcmovb",
+    "named": false
+  },
+  {
+    "type": "fcmovbe",
+    "named": false
+  },
+  {
+    "type": "fcmove",
+    "named": false
+  },
+  {
+    "type": "fcmovna",
+    "named": false
+  },
+  {
+    "type": "fcmovnae",
+    "named": false
+  },
+  {
+    "type": "fcmovnb",
+    "named": false
+  },
+  {
+    "type": "fcmovnbe",
+    "named": false
+  },
+  {
+    "type": "fcmovne",
+    "named": false
+  },
+  {
+    "type": "fcmovnu",
+    "named": false
+  },
+  {
+    "type": "fcmovu",
+    "named": false
+  },
+  {
+    "type": "fcom",
+    "named": false
+  },
+  {
+    "type": "fcomi",
+    "named": false
+  },
+  {
+    "type": "fcomip",
+    "named": false
+  },
+  {
+    "type": "fcomp",
+    "named": false
+  },
+  {
+    "type": "fcompp",
+    "named": false
+  },
+  {
+    "type": "fcos",
+    "named": false
+  },
+  {
+    "type": "fdecstp",
+    "named": false
+  },
+  {
+    "type": "fdiv",
+    "named": false
+  },
+  {
+    "type": "fdivp",
+    "named": false
+  },
+  {
+    "type": "fdivr",
+    "named": false
+  },
+  {
+    "type": "fdivrp",
+    "named": false
+  },
+  {
+    "type": "ffree",
+    "named": false
+  },
+  {
+    "type": "fiadd",
+    "named": false
+  },
+  {
+    "type": "ficom",
+    "named": false
+  },
+  {
+    "type": "ficomp",
+    "named": false
+  },
+  {
+    "type": "fidiv",
+    "named": false
+  },
+  {
+    "type": "fidivr",
+    "named": false
+  },
+  {
+    "type": "fild",
+    "named": false
+  },
+  {
+    "type": "fimul",
+    "named": false
+  },
+  {
+    "type": "fincstp",
+    "named": false
+  },
+  {
+    "type": "finit",
+    "named": false
+  },
+  {
+    "type": "fist",
+    "named": false
+  },
+  {
+    "type": "fistp",
+    "named": false
+  },
+  {
+    "type": "fisttp",
+    "named": false
+  },
+  {
+    "type": "fisub",
+    "named": false
+  },
+  {
+    "type": "fisubr",
+    "named": false
+  },
+  {
+    "type": "fld",
+    "named": false
+  },
+  {
+    "type": "fld1",
+    "named": false
+  },
+  {
+    "type": "fldcw",
+    "named": false
+  },
+  {
+    "type": "fldenv",
+    "named": false
+  },
+  {
+    "type": "fldl2e",
+    "named": false
+  },
+  {
+    "type": "fldl2t",
+    "named": false
+  },
+  {
+    "type": "fldlg2",
+    "named": false
+  },
+  {
+    "type": "fldln2",
+    "named": false
+  },
+  {
+    "type": "fldpi",
+    "named": false
+  },
+  {
+    "type": "fldz",
+    "named": false
+  },
+  {
+    "type": "float_literal",
+    "named": true
+  },
+  {
+    "type": "fmul",
+    "named": false
+  },
+  {
+    "type": "fmulp",
+    "named": false
+  },
+  {
+    "type": "fnclex",
+    "named": false
+  },
+  {
+    "type": "fninit",
+    "named": false
+  },
+  {
+    "type": "fnop",
+    "named": false
+  },
+  {
+    "type": "fnsave",
+    "named": false
+  },
+  {
+    "type": "fnstcw",
+    "named": false
+  },
+  {
+    "type": "fnstenv",
+    "named": false
+  },
+  {
+    "type": "fnstsw",
+    "named": false
+  },
+  {
+    "type": "for",
+    "named": false
+  },
+  {
+    "type": "forever",
+    "named": false
+  },
+  {
+    "type": "forward",
+    "named": false
+  },
+  {
+    "type": "fpatan",
+    "named": false
+  },
+  {
+    "type": "fprem",
+    "named": false
+  },
+  {
+    "type": "fprem1",
+    "named": false
+  },
+  {
+    "type": "fptan",
+    "named": false
+  },
+  {
+    "type": "frndint",
+    "named": false
+  },
+  {
+    "type": "frstor",
+    "named": false
+  },
+  {
+    "type": "fsave",
+    "named": false
+  },
+  {
+    "type": "fscale",
+    "named": false
+  },
+  {
+    "type": "fsin",
+    "named": false
+  },
+  {
+    "type": "fsincos",
+    "named": false
+  },
+  {
+    "type": "fsqrt",
+    "named": false
+  },
+  {
+    "type": "fst",
+    "named": false
+  },
+  {
+    "type": "fstcw",
+    "named": false
+  },
+  {
+    "type": "fstenv",
+    "named": false
+  },
+  {
+    "type": "fstp",
+    "named": false
+  },
+  {
+    "type": "fstsw",
+    "named": false
+  },
+  {
+    "type": "fsub",
+    "named": false
+  },
+  {
+    "type": "fsubp",
+    "named": false
+  },
+  {
+    "type": "fsubr",
+    "named": false
+  },
+  {
+    "type": "fsubrp",
+    "named": false
+  },
+  {
+    "type": "ftst",
+    "named": false
+  },
+  {
+    "type": "fucom",
+    "named": false
+  },
+  {
+    "type": "fucomi",
+    "named": false
+  },
+  {
+    "type": "fucomip",
+    "named": false
+  },
+  {
+    "type": "fucomp",
+    "named": false
+  },
+  {
+    "type": "fucompp",
+    "named": false
+  },
+  {
+    "type": "fwait",
+    "named": false
+  },
+  {
+    "type": "fxam",
+    "named": false
+  },
+  {
+    "type": "fxch",
+    "named": false
+  },
+  {
+    "type": "fxrstor",
+    "named": false
+  },
+  {
+    "type": "fxsave",
+    "named": false
+  },
+  {
+    "type": "fxtract",
+    "named": false
+  },
+  {
+    "type": "fyl2x",
+    "named": false
+  },
+  {
+    "type": "fyl2xp1",
+    "named": false
+  },
+  {
+    "type": "haddpd",
+    "named": false
+  },
+  {
+    "type": "haddps",
+    "named": false
+  },
+  {
+    "type": "hlt",
+    "named": false
+  },
+  {
+    "type": "hsubpd",
+    "named": false
+  },
+  {
+    "type": "hsubps",
+    "named": false
+  },
+  {
+    "type": "identifier",
+    "named": true
+  },
+  {
+    "type": "idiv",
+    "named": false
+  },
+  {
+    "type": "if",
+    "named": false
+  },
+  {
+    "type": "imod",
+    "named": false
+  },
+  {
+    "type": "imul",
+    "named": false
+  },
+  {
+    "type": "in",
+    "named": false
+  },
+  {
+    "type": "inc",
+    "named": false
+  },
+  {
+    "type": "insb",
+    "named": false
+  },
+  {
+    "type": "insd",
+    "named": false
+  },
+  {
+    "type": "insw",
+    "named": false
+  },
+  {
+    "type": "int",
+    "named": false
+  },
+  {
+    "type": "int128",
+    "named": false
+  },
+  {
+    "type": "int16",
+    "named": false
+  },
+  {
+    "type": "int32",
+    "named": false
+  },
+  {
+    "type": "int64",
+    "named": false
+  },
+  {
+    "type": "int8",
+    "named": false
+  },
+  {
+    "type": "int_literal",
+    "named": true
+  },
+  {
+    "type": "intmul",
+    "named": false
+  },
+  {
+    "type": "into",
+    "named": false
+  },
+  {
+    "type": "invd",
+    "named": false
+  },
+  {
+    "type": "invlpg",
+    "named": false
+  },
+  {
+    "type": "iret",
+    "named": false
+  },
+  {
+    "type": "iretd",
+    "named": false
+  },
+  {
+    "type": "ja",
+    "named": false
+  },
+  {
+    "type": "jae",
+    "named": false
+  },
+  {
+    "type": "jb",
+    "named": false
+  },
+  {
+    "type": "jbe",
+    "named": false
+  },
+  {
+    "type": "jc",
+    "named": false
+  },
+  {
+    "type": "jcxz",
+    "named": false
+  },
+  {
+    "type": "je",
+    "named": false
+  },
+  {
+    "type": "jecxz",
+    "named": false
+  },
+  {
+    "type": "jf",
+    "named": false
+  },
+  {
+    "type": "jg",
+    "named": false
+  },
+  {
+    "type": "jge",
+    "named": false
+  },
+  {
+    "type": "jl",
+    "named": false
+  },
+  {
+    "type": "jle",
+    "named": false
+  },
+  {
+    "type": "jmp",
+    "named": false
+  },
+  {
+    "type": "jna",
+    "named": false
+  },
+  {
+    "type": "jnae",
+    "named": false
+  },
+  {
+    "type": "jnb",
+    "named": false
+  },
+  {
+    "type": "jnbe",
+    "named": false
+  },
+  {
+    "type": "jnc",
+    "named": false
+  },
+  {
+    "type": "jne",
+    "named": false
+  },
+  {
+    "type": "jng",
+    "named": false
+  },
+  {
+    "type": "jnge",
+    "named": false
+  },
+  {
+    "type": "jnl",
+    "named": false
+  },
+  {
+    "type": "jnle",
+    "named": false
+  },
+  {
+    "type": "jno",
+    "named": false
+  },
+  {
+    "type": "jnp",
+    "named": false
+  },
+  {
+    "type": "jns",
+    "named": false
+  },
+  {
+    "type": "jnz",
+    "named": false
+  },
+  {
+    "type": "jo",
+    "named": false
+  },
+  {
+    "type": "jp",
+    "named": false
+  },
+  {
+    "type": "jpe",
+    "named": false
+  },
+  {
+    "type": "jpo",
+    "named": false
+  },
+  {
+    "type": "js",
+    "named": false
+  },
+  {
+    "type": "jt",
+    "named": false
+  },
+  {
+    "type": "jz",
+    "named": false
+  },
+  {
+    "type": "lahf",
+    "named": false
+  },
+  {
+    "type": "lar",
+    "named": false
+  },
+  {
+    "type": "lddqu",
+    "named": false
+  },
+  {
+    "type": "ldmxcsr",
+    "named": false
+  },
+  {
+    "type": "lds",
+    "named": false
+  },
+  {
+    "type": "lea",
+    "named": false
+  },
+  {
+    "type": "leave",
+    "named": false
+  },
+  {
+    "type": "les",
+    "named": false
+  },
+  {
+    "type": "lfence",
+    "named": false
+  },
+  {
+    "type": "lfs",
+    "named": false
+  },
+  {
+    "type": "lgdt",
+    "named": false
+  },
+  {
+    "type": "lgs",
+    "named": false
+  },
+  {
+    "type": "lidt",
+    "named": false
+  },
+  {
+    "type": "lldt",
+    "named": false
+  },
+  {
+    "type": "lmsw",
+    "named": false
+  },
+  {
+    "type": "lock.adc",
+    "named": false
+  },
+  {
+    "type": "lock.add",
+    "named": false
+  },
+  {
+    "type": "lock.and",
+    "named": false
+  },
+  {
+    "type": "lock.btc",
+    "named": false
+  },
+  {
+    "type": "lock.btr",
+    "named": false
+  },
+  {
+    "type": "lock.bts",
+    "named": false
+  },
+  {
+    "type": "lock.cmpxchg",
+    "named": false
+  },
+  {
+    "type": "lock.dec",
+    "named": false
+  },
+  {
+    "type": "lock.inc",
+    "named": false
+  },
+  {
+    "type": "lock.neg",
+    "named": false
+  },
+  {
+    "type": "lock.not",
+    "named": false
+  },
+  {
+    "type": "lock.or",
+    "named": false
+  },
+  {
+    "type": "lock.sbb",
+    "named": false
+  },
+  {
+    "type": "lock.sub",
+    "named": false
+  },
+  {
+    "type": "lock.xadd",
+    "named": false
+  },
+  {
+    "type": "lock.xchg",
+    "named": false
+  },
+  {
+    "type": "lock.xor",
+    "named": false
+  },
+  {
+    "type": "lodsb",
+    "named": false
+  },
+  {
+    "type": "lodsd",
+    "named": false
+  },
+  {
+    "type": "lodsw",
+    "named": false
+  },
+  {
+    "type": "loop",
+    "named": false
+  },
+  {
+    "type": "loope",
+    "named": false
+  },
+  {
+    "type": "loopne",
+    "named": false
+  },
+  {
+    "type": "loopnz",
+    "named": false
+  },
+  {
+    "type": "loopz",
+    "named": false
+  },
+  {
+    "type": "lsl",
+    "named": false
+  },
+  {
+    "type": "lss",
+    "named": false
+  },
+  {
+    "type": "ltreg",
+    "named": false
+  },
+  {
+    "type": "lword",
+    "named": false
+  },
+  {
+    "type": "maskmovdqu",
+    "named": false
+  },
+  {
+    "type": "maskmovq",
+    "named": false
+  },
+  {
+    "type": "maxpd",
+    "named": false
+  },
+  {
+    "type": "maxps",
+    "named": false
+  },
+  {
+    "type": "maxsd",
+    "named": false
+  },
+  {
+    "type": "maxss",
+    "named": false
+  },
+  {
+    "type": "mfence",
+    "named": false
+  },
+  {
+    "type": "minpd",
+    "named": false
+  },
+  {
+    "type": "minps",
+    "named": false
+  },
+  {
+    "type": "minsd",
+    "named": false
+  },
+  {
+    "type": "minss",
+    "named": false
+  },
+  {
+    "type": "mod",
+    "named": false
+  },
+  {
+    "type": "monitor",
+    "named": false
+  },
+  {
+    "type": "mov",
+    "named": false
+  },
+  {
+    "type": "movapd",
+    "named": false
+  },
+  {
+    "type": "movaps",
+    "named": false
+  },
+  {
+    "type": "movd",
+    "named": false
+  },
+  {
+    "type": "movddup",
+    "named": false
+  },
+  {
+    "type": "movdq2q",
+    "named": false
+  },
+  {
+    "type": "movdqa",
+    "named": false
+  },
+  {
+    "type": "movdqu",
+    "named": false
+  },
+  {
+    "type": "movhlps",
+    "named": false
+  },
+  {
+    "type": "movhpd",
+    "named": false
+  },
+  {
+    "type": "movhps",
+    "named": false
+  },
+  {
+    "type": "movlhps",
+    "named": false
+  },
+  {
+    "type": "movlpd",
+    "named": false
+  },
+  {
+    "type": "movlps",
+    "named": false
+  },
+  {
+    "type": "movmskpd",
+    "named": false
+  },
+  {
+    "type": "movmskps",
+    "named": false
+  },
+  {
+    "type": "movntdq",
+    "named": false
+  },
+  {
+    "type": "movnti",
+    "named": false
+  },
+  {
+    "type": "movntpd",
+    "named": false
+  },
+  {
+    "type": "movntps",
+    "named": false
+  },
+  {
+    "type": "movntq",
+    "named": false
+  },
+  {
+    "type": "movq",
+    "named": false
+  },
+  {
+    "type": "movq2dq",
+    "named": false
+  },
+  {
+    "type": "movsb",
+    "named": false
+  },
+  {
+    "type": "movsd",
+    "named": false
+  },
+  {
+    "type": "movshdup",
+    "named": false
+  },
+  {
+    "type": "movsldup",
+    "named": false
+  },
+  {
+    "type": "movss",
+    "named": false
+  },
+  {
+    "type": "movsw",
+    "named": false
+  },
+  {
+    "type": "movsx",
+    "named": false
+  },
+  {
+    "type": "movupd",
+    "named": false
+  },
+  {
+    "type": "movups",
+    "named": false
+  },
+  {
+    "type": "movzx",
+    "named": false
+  },
+  {
+    "type": "mul",
+    "named": false
+  },
+  {
+    "type": "mulpd",
+    "named": false
+  },
+  {
+    "type": "mulps",
+    "named": false
+  },
+  {
+    "type": "mulsd",
+    "named": false
+  },
+  {
+    "type": "mulss",
+    "named": false
+  },
+  {
+    "type": "mwait",
+    "named": false
+  },
+  {
+    "type": "neg",
+    "named": false
+  },
+  {
+    "type": "nop",
+    "named": false
+  },
+  {
+    "type": "not",
+    "named": false
+  },
+  {
+    "type": "or",
+    "named": false
+  },
+  {
+    "type": "orpd",
+    "named": false
+  },
+  {
+    "type": "orps",
+    "named": false
+  },
+  {
+    "type": "out",
+    "named": false
+  },
+  {
+    "type": "outsb",
+    "named": false
+  },
+  {
+    "type": "outsd",
+    "named": false
+  },
+  {
+    "type": "outsw",
+    "named": false
+  },
+  {
+    "type": "packssdw",
+    "named": false
+  },
+  {
+    "type": "packsswb",
+    "named": false
+  },
+  {
+    "type": "packuswb",
+    "named": false
+  },
+  {
+    "type": "paddb",
+    "named": false
+  },
+  {
+    "type": "paddd",
+    "named": false
+  },
+  {
+    "type": "paddq",
+    "named": false
+  },
+  {
+    "type": "paddsb",
+    "named": false
+  },
+  {
+    "type": "paddsw",
+    "named": false
+  },
+  {
+    "type": "paddusb",
+    "named": false
+  },
+  {
+    "type": "paddusw",
+    "named": false
+  },
+  {
+    "type": "paddw",
+    "named": false
+  },
+  {
+    "type": "pand",
+    "named": false
+  },
+  {
+    "type": "pandn",
+    "named": false
+  },
+  {
+    "type": "pause",
+    "named": false
+  },
+  {
+    "type": "pavgb",
+    "named": false
+  },
+  {
+    "type": "pavgw",
+    "named": false
+  },
+  {
+    "type": "pcmpeqb",
+    "named": false
+  },
+  {
+    "type": "pcmpeqd",
+    "named": false
+  },
+  {
+    "type": "pcmpeqw",
+    "named": false
+  },
+  {
+    "type": "pcmpgtb",
+    "named": false
+  },
+  {
+    "type": "pcmpgtd",
+    "named": false
+  },
+  {
+    "type": "pcmpgtw",
+    "named": false
+  },
+  {
+    "type": "pextrw",
+    "named": false
+  },
+  {
+    "type": "pinsrw",
+    "named": false
+  },
+  {
+    "type": "pmaddwd",
+    "named": false
+  },
+  {
+    "type": "pmaxsw",
+    "named": false
+  },
+  {
+    "type": "pmaxub",
+    "named": false
+  },
+  {
+    "type": "pminsw",
+    "named": false
+  },
+  {
+    "type": "pminub",
+    "named": false
+  },
+  {
+    "type": "pmovmskb",
+    "named": false
+  },
+  {
+    "type": "pmulhuw",
+    "named": false
+  },
+  {
+    "type": "pmulhw",
+    "named": false
+  },
+  {
+    "type": "pmullw",
+    "named": false
+  },
+  {
+    "type": "pmuludq",
+    "named": false
+  },
+  {
+    "type": "pop",
+    "named": false
+  },
+  {
+    "type": "popa",
+    "named": false
+  },
+  {
+    "type": "popad",
+    "named": false
+  },
+  {
+    "type": "popf",
+    "named": false
+  },
+  {
+    "type": "popfd",
+    "named": false
+  },
+  {
+    "type": "por",
+    "named": false
+  },
+  {
+    "type": "prefetchnta",
+    "named": false
+  },
+  {
+    "type": "prefetcht0",
+    "named": false
+  },
+  {
+    "type": "prefetcht1",
+    "named": false
+  },
+  {
+    "type": "prefetcht2",
+    "named": false
+  },
+  {
+    "type": "procedure",
+    "named": false
+  },
+  {
+    "type": "program",
+    "named": false
+  },
+  {
+    "type": "psadbw",
+    "named": false
+  },
+  {
+    "type": "pshufd",
+    "named": false
+  },
+  {
+    "type": "pshufhw",
+    "named": false
+  },
+  {
+    "type": "pshuflw",
+    "named": false
+  },
+  {
+    "type": "pshufw",
+    "named": false
+  },
+  {
+    "type": "pslld",
+    "named": false
+  },
+  {
+    "type": "pslldq",
+    "named": false
+  },
+  {
+    "type": "psllq",
+    "named": false
+  },
+  {
+    "type": "psllw",
+    "named": false
+  },
+  {
+    "type": "psrad",
+    "named": false
+  },
+  {
+    "type": "psraw",
+    "named": false
+  },
+  {
+    "type": "psrld",
+    "named": false
+  },
+  {
+    "type": "psrldq",
+    "named": false
+  },
+  {
+    "type": "psrlq",
+    "named": false
+  },
+  {
+    "type": "psrlw",
+    "named": false
+  },
+  {
+    "type": "psubb",
+    "named": false
+  },
+  {
+    "type": "psubd",
+    "named": false
+  },
+  {
+    "type": "psubq",
+    "named": false
+  },
+  {
+    "type": "psubsb",
+    "named": false
+  },
+  {
+    "type": "psubsw",
+    "named": false
+  },
+  {
+    "type": "psubusb",
+    "named": false
+  },
+  {
+    "type": "psubusw",
+    "named": false
+  },
+  {
+    "type": "psubw",
+    "named": false
+  },
+  {
+    "type": "punpckhbw",
+    "named": false
+  },
+  {
+    "type": "punpckhdq",
+    "named": false
+  },
+  {
+    "type": "punpckhqdq",
+    "named": false
+  },
+  {
+    "type": "punpckhwd",
+    "named": false
+  },
+  {
+    "type": "punpcklbw",
+    "named": false
+  },
+  {
+    "type": "punpckldq",
+    "named": false
+  },
+  {
+    "type": "punpcklqdq",
+    "named": false
+  },
+  {
+    "type": "punpcklwd",
+    "named": false
+  },
+  {
+    "type": "push",
+    "named": false
+  },
+  {
+    "type": "pusha",
+    "named": false
+  },
+  {
+    "type": "pushad",
+    "named": false
+  },
+  {
+    "type": "pushd",
+    "named": false
+  },
+  {
+    "type": "pushf",
+    "named": false
+  },
+  {
+    "type": "pushfd",
+    "named": false
+  },
+  {
+    "type": "pushw",
+    "named": false
+  },
+  {
+    "type": "pxor",
+    "named": false
+  },
+  {
+    "type": "qword",
+    "named": false
+  },
+  {
+    "type": "rcl",
+    "named": false
+  },
+  {
+    "type": "rcpps",
+    "named": false
+  },
+  {
+    "type": "rcpss",
+    "named": false
+  },
+  {
+    "type": "rcr",
+    "named": false
+  },
+  {
+    "type": "rdmsr",
+    "named": false
+  },
+  {
+    "type": "rdpmc",
+    "named": false
+  },
+  {
+    "type": "rdtsc",
+    "named": false
+  },
+  {
+    "type": "real128",
+    "named": false
+  },
+  {
+    "type": "real32",
+    "named": false
+  },
+  {
+    "type": "real64",
+    "named": false
+  },
+  {
+    "type": "real80",
+    "named": false
+  },
+  {
+    "type": "rep.insb",
+    "named": false
+  },
+  {
+    "type": "rep.insd",
+    "named": false
+  },
+  {
+    "type": "rep.insw",
+    "named": false
+  },
+  {
+    "type": "rep.movsb",
+    "named": false
+  },
+  {
+    "type": "rep.movsd",
+    "named": false
+  },
+  {
+    "type": "rep.movsw",
+    "named": false
+  },
+  {
+    "type": "rep.outsb",
+    "named": false
+  },
+  {
+    "type": "rep.outsd",
+    "named": false
+  },
+  {
+    "type": "rep.outsw",
+    "named": false
+  },
+  {
+    "type": "rep.stosb",
+    "named": false
+  },
+  {
+    "type": "rep.stosd",
+    "named": false
+  },
+  {
+    "type": "rep.stosw",
+    "named": false
+  },
+  {
+    "type": "repe.cmpsb",
+    "named": false
+  },
+  {
+    "type": "repe.cmpsd",
+    "named": false
+  },
+  {
+    "type": "repe.cmpsw",
+    "named": false
+  },
+  {
+    "type": "repe.scasb",
+    "named": false
+  },
+  {
+    "type": "repe.scasd",
+    "named": false
+  },
+  {
+    "type": "repe.scasw",
+    "named": false
+  },
+  {
+    "type": "repeat",
+    "named": false
+  },
+  {
+    "type": "repne.cmpsb",
+    "named": false
+  },
+  {
+    "type": "repne.cmpsd",
+    "named": false
+  },
+  {
+    "type": "repne.cmpsw",
+    "named": false
+  },
+  {
+    "type": "repne.scasb",
+    "named": false
+  },
+  {
+    "type": "repne.scasd",
+    "named": false
+  },
+  {
+    "type": "repne.scasw",
+    "named": false
+  },
+  {
+    "type": "repnz.cmpsb",
+    "named": false
+  },
+  {
+    "type": "repnz.cmpsd",
+    "named": false
+  },
+  {
+    "type": "repnz.cmpsw",
+    "named": false
+  },
+  {
+    "type": "repnz.scasb",
+    "named": false
+  },
+  {
+    "type": "repnz.scasd",
+    "named": false
+  },
+  {
+    "type": "repnz.scasw",
+    "named": false
+  },
+  {
+    "type": "repz.cmpsb",
+    "named": false
+  },
+  {
+    "type": "repz.cmpsd",
+    "named": false
+  },
+  {
+    "type": "repz.cmpsw",
+    "named": false
+  },
+  {
+    "type": "repz.scasb",
+    "named": false
+  },
+  {
+    "type": "repz.scasd",
+    "named": false
+  },
+  {
+    "type": "repz.scasw",
+    "named": false
+  },
+  {
+    "type": "ret",
+    "named": false
+  },
+  {
+    "type": "rol",
+    "named": false
+  },
+  {
+    "type": "ror",
+    "named": false
+  },
+  {
+    "type": "rsm",
+    "named": false
+  },
+  {
+    "type": "rsqrtps",
+    "named": false
+  },
+  {
+    "type": "rsqrtss",
+    "named": false
+  },
+  {
+    "type": "sahf",
+    "named": false
+  },
+  {
+    "type": "sal",
+    "named": false
+  },
+  {
+    "type": "sar",
+    "named": false
+  },
+  {
+    "type": "sbb",
+    "named": false
+  },
+  {
+    "type": "scasb",
+    "named": false
+  },
+  {
+    "type": "scasd",
+    "named": false
+  },
+  {
+    "type": "scasw",
+    "named": false
+  },
+  {
+    "type": "seta",
+    "named": false
+  },
+  {
+    "type": "setae",
+    "named": false
+  },
+  {
+    "type": "setb",
+    "named": false
+  },
+  {
+    "type": "setbe",
+    "named": false
+  },
+  {
+    "type": "setc",
+    "named": false
+  },
+  {
+    "type": "sete",
+    "named": false
+  },
+  {
+    "type": "setg",
+    "named": false
+  },
+  {
+    "type": "setge",
+    "named": false
+  },
+  {
+    "type": "setl",
+    "named": false
+  },
+  {
+    "type": "setle",
+    "named": false
+  },
+  {
+    "type": "setna",
+    "named": false
+  },
+  {
+    "type": "setnae",
+    "named": false
+  },
+  {
+    "type": "setnb",
+    "named": false
+  },
+  {
+    "type": "setnbe",
+    "named": false
+  },
+  {
+    "type": "setnc",
+    "named": false
+  },
+  {
+    "type": "setne",
+    "named": false
+  },
+  {
+    "type": "setng",
+    "named": false
+  },
+  {
+    "type": "setnge",
+    "named": false
+  },
+  {
+    "type": "setnl",
+    "named": false
+  },
+  {
+    "type": "setnle",
+    "named": false
+  },
+  {
+    "type": "setno",
+    "named": false
+  },
+  {
+    "type": "setnp",
+    "named": false
+  },
+  {
+    "type": "setns",
+    "named": false
+  },
+  {
+    "type": "setnz",
+    "named": false
+  },
+  {
+    "type": "seto",
+    "named": false
+  },
+  {
+    "type": "setp",
+    "named": false
+  },
+  {
+    "type": "setpe",
+    "named": false
+  },
+  {
+    "type": "setpo",
+    "named": false
+  },
+  {
+    "type": "sets",
+    "named": false
+  },
+  {
+    "type": "setz",
+    "named": false
+  },
+  {
+    "type": "sfence",
+    "named": false
+  },
+  {
+    "type": "sgdt",
+    "named": false
+  },
+  {
+    "type": "shl",
+    "named": false
+  },
+  {
+    "type": "shld",
+    "named": false
+  },
+  {
+    "type": "shr",
+    "named": false
+  },
+  {
+    "type": "shrd",
+    "named": false
+  },
+  {
+    "type": "shufpd",
+    "named": false
+  },
+  {
+    "type": "shufps",
+    "named": false
+  },
+  {
+    "type": "sidt",
+    "named": false
+  },
+  {
+    "type": "sldt",
+    "named": false
+  },
+  {
+    "type": "smsw",
+    "named": false
+  },
+  {
+    "type": "sqrtpd",
+    "named": false
+  },
+  {
+    "type": "sqrtps",
+    "named": false
+  },
+  {
+    "type": "sqrtsd",
+    "named": false
+  },
+  {
+    "type": "sqrtss",
+    "named": false
+  },
+  {
+    "type": "static",
+    "named": false
+  },
+  {
+    "type": "stc",
+    "named": false
+  },
+  {
+    "type": "std",
+    "named": false
+  },
+  {
+    "type": "sti",
+    "named": false
+  },
+  {
+    "type": "stmxcsr",
+    "named": false
+  },
+  {
+    "type": "stosb",
+    "named": false
+  },
+  {
+    "type": "stosd",
+    "named": false
+  },
+  {
+    "type": "stosw",
+    "named": false
+  },
+  {
+    "type": "streg",
+    "named": false
+  },
+  {
+    "type": "string",
+    "named": false
+  },
+  {
+    "type": "string_literal",
+    "named": true
+  },
+  {
+    "type": "sub",
+    "named": false
+  },
+  {
+    "type": "subpd",
+    "named": false
+  },
+  {
+    "type": "subps",
+    "named": false
+  },
+  {
+    "type": "subsd",
+    "named": false
+  },
+  {
+    "type": "subss",
+    "named": false
+  },
+  {
+    "type": "switch",
+    "named": false
+  },
+  {
+    "type": "sysenter",
+    "named": false
+  },
+  {
+    "type": "sysexit",
+    "named": false
+  },
+  {
+    "type": "tbyte",
+    "named": false
+  },
+  {
+    "type": "text",
+    "named": false
+  },
+  {
+    "type": "then",
+    "named": false
+  },
+  {
+    "type": "thunk",
+    "named": false
+  },
+  {
+    "type": "true",
+    "named": false
+  },
+  {
+    "type": "try",
+    "named": false
+  },
+  {
+    "type": "type",
+    "named": false
+  },
+  {
+    "type": "ucomisd",
+    "named": false
+  },
+  {
+    "type": "ucomiss",
+    "named": false
+  },
+  {
+    "type": "ud2",
+    "named": false
+  },
+  {
+    "type": "unpckhpd",
+    "named": false
+  },
+  {
+    "type": "unpckhps",
+    "named": false
+  },
+  {
+    "type": "unpcklpd",
+    "named": false
+  },
+  {
+    "type": "unpcklps",
+    "named": false
+  },
+  {
+    "type": "uns128",
+    "named": false
+  },
+  {
+    "type": "uns16",
+    "named": false
+  },
+  {
+    "type": "uns32",
+    "named": false
+  },
+  {
+    "type": "uns64",
+    "named": false
+  },
+  {
+    "type": "uns8",
+    "named": false
+  },
+  {
+    "type": "until",
+    "named": false
+  },
+  {
+    "type": "val",
+    "named": false
+  },
+  {
+    "type": "var",
+    "named": false
+  },
+  {
+    "type": "verr",
+    "named": false
+  },
+  {
+    "type": "verw",
+    "named": false
+  },
+  {
+    "type": "vmt",
+    "named": false
+  },
+  {
+    "type": "wbinvd",
+    "named": false
+  },
+  {
+    "type": "wchar",
+    "named": false
+  },
+  {
+    "type": "while",
+    "named": false
+  },
+  {
+    "type": "word",
+    "named": false
+  },
+  {
+    "type": "wrmsr",
+    "named": false
+  },
+  {
+    "type": "wstring",
+    "named": false
+  },
+  {
+    "type": "xadd",
+    "named": false
+  },
+  {
+    "type": "xchg",
+    "named": false
+  },
+  {
+    "type": "xlat",
+    "named": false
+  },
+  {
+    "type": "xor",
+    "named": false
+  },
+  {
+    "type": "xorpd",
+    "named": false
+  },
+  {
+    "type": "xorps",
+    "named": false
+  },
+  {
+    "type": "zstring",
+    "named": false
+  },
+  {
+    "type": "||",
+    "named": false
+  }
+]

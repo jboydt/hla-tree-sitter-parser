@@ -1,0 +1,26 @@
+{
+  "name": "tree-sitter-hla-assembly",
+  "version": "1.0.0",
+  "description": "tree-sitter parser for hla assembly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/jboydt/tree-sitter-hla-assembly"
+  },
+  "keywords": [
+    "hla",
+    "assembly",
+    "x86"
+  ],
+  "author": "J Boyd Trolinger",
+  "license": "MIT",
+  "dependencies": {
+    "nan": "^2.14.1"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.16.5"
+  }
+}
